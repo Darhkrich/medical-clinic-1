@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Link from "next/link";
 import Footer from "@/components/layout/Footer";
 import { Heart, Brain, Bone, Activity, Stethoscope, Baby, ArrowRight } from "lucide-react";
-
+import FloatingLinkButton from "@/components/floatingButton";
 export const metadata = {
   title: 'Medical Services |  Clinic website',
   description: 'Comprehensive medical services and departments.',
@@ -45,7 +45,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-slate-50/50">
       <Navbar />
-    
+      <FloatingLinkButton/>
       {/* Header Section */}
       <div className="bg-white border-b border-slate-100 pt-16 pb-12">
         <div className="max-w-7xl mx-auto px-4 text-center">

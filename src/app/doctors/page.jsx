@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import DoctorCard from "@/components/features/DoctorCard";
 import { doctors } from "@/data/doctors";
 import { Search, SlidersHorizontal } from "lucide-react";
-
+import FloatingLinkButton from "@/components/floatingButton";
 export default function DoctorsPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -23,7 +23,7 @@ export default function DoctorsPage() {
   return (
     <div className="min-h-screen bg-slate-50/50 flex flex-col">
       <Navbar />
-     
+      <FloatingLinkButton/>
       <div className="flex-grow">
         <div className="bg-white border-b border-slate-100 pt-20 pb-16 relative overflow-hidden">
           <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-teal-50/50 to-transparent" />
