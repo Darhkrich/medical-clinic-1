@@ -1,7 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/Button";
-import FloatingLinkButton from "@/components/floatingButton";
+
 import Link from "next/link";
 import { ArrowRight, ShieldCheck, Clock, UserCheck, Star } from "lucide-react";
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="min-h-screen font-sans">
       <Navbar />
-      <FloatingLinkButton/>
+    
       {/* Hero Section (Enhanced with glass panel) */}
       <section className="relative pt-20 pb-32 overflow-hidden">
         {/* Background Gradients */}
